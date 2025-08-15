@@ -1,0 +1,390 @@
+ .navbar {
+      background-color: #fff;
+      padding: 16px 32px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    .login-btn {
+      background: #fff3e0;
+      border: none;
+      box-shadow: 0 5px 15px rgba(255, 186, 38, 0.3);
+      color: #F17228;
+      font-weight: bold;
+      padding: 0.4rem 1rem;
+      border-radius: 10px;
+    }
+    .login-btn i {
+      margin-right: 5px;
+    }
+    .nav-icon-text {
+      font-weight: bold;
+      color: #333;
+    }
+    .nav-location {
+      font-weight: 600;
+      color: #555;
+    }
+    .nav-location span {
+      color: #333;
+    }
+     /* Make collapse smooth for small screens */
+  #searchInput.collapse:not(.show) {
+    display: none;
+  }
+    .search-btn i {
+      margin-right: 5px;
+    }
+    .logo img {
+      height: 30px;
+      margin-right: 8px;
+    }
+    .order-card {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      margin-top: 20px;
+    }
+
+    .search-btn {
+      background: #F17228;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+    }
+
+    .search-btn:hover {
+      background: #d8601f;
+    }
+
+    .nav-tabs .nav-link {
+      font-weight: 600;
+      color: #333;
+      border: none;
+    }
+
+    .nav-tabs .nav-link.active {
+      color: #F17228;
+      background-color: transparent;
+      border-bottom: 2px solid #F17228;
+    }
+   .hero-section {
+  background-color: #f59f00;
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  padding: 100px 20px 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-img {
+  max-width: 370px;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  margin-top: 150px;
+  margin-left: 150px;
+ 
+}
+
+@media (max-width: 991.98px) {
+  .hero-text {
+    text-align: center;
+  }
+}
+
+.discount-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(241, 114, 40, 1);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.discount-badge .main {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.discount-badge .sub {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  line-height: 1;
+}
+
+
+.how-it-works-section {
+background: linear-gradient(
+  rgb(255, 206, 103, 1)0%,
+  rgba(253, 237, 202, 0) 100%);
+}
+
+ .location {
+  transition: transform 0.2s ease;
+}
+
+.location:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.custom-nav-btn {
+  background: radial-gradient(circle, #FFBA26, #FF9A0E);
+  padding: 18px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.8);
+  transition: 0.3s;
+}
+.custom-nav-btn:hover {
+  background: #FF9A0E;
+}
+/*popular items*/
+/* Ensure carousel images are smaller and nicely sized */
+.owl-carousel .item .card {
+  width: 100%;
+  max-width: 150px; /* Controls width per card */
+  margin: auto;
+
+}
+
+.owl-carousel .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+/* Button style */
+.order-btn {
+  background-color: #F17228;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+}
+
+.order-btn:hover {
+  background-color: #d85e1b;
+}
+
+/* Space around the cards in the carousel */
+.owl-carousel .item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Responsive tweaks if needed */
+@media (max-width: 576px) {
+  .owl-carousel .card-img-top {
+    height: 100px;
+  }
+}
+  /* SECTION BACKGROUND */
+    .install-app-section {
+        background: linear-gradient rgba(228, 185, 185, 0.89), rgba(255, 255, 255, 1);
+        padding: 50px 20px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* MAIN FLEX CONTAINER */
+    .install-app-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
+       position: relative;
+       z-index: 2;
+    }
+
+    /* PHONE IMAGES */
+    .phone-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .phone {
+        height: auto;
+    }
+
+    .phone-left {
+        width: 240px;
+        margin-right: 60px;/*lower the left phone*/
+    }
+
+    .phone-right {
+        width: 240px;
+       margin-left: -50px;/*overlap slightly with the left phone*/
+    }
+
+    /* TEXT AREA */
+    .text-wrapper {
+        max-width: 400px;
+        padding-top: 30px;/*raise text and right phone*/
+    }
+
+    .text-wrapper h2 {
+        color: #f7931e;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text-wrapper p {
+        color: #4d4d4d;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    /* STORE BUTTONS */
+    .store-buttons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .store-btn {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+        padding: 8px 14px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .store-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .store-btn img {
+        height: 28px;
+        margin-right: 10px;
+    }
+
+    .btn-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+    }
+
+    .btn-text .small-text {
+        font-size: 0.65rem;
+        opacity: 0.8;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-text .big-text {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+        .install-app-container {
+            flex-direction: column;
+            text-align: center;
+            text-align: center;
+        }
+
+        .phone-wrapper {
+           order: 1;
+        }
+
+        .store-buttons {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .phone-left,
+        .phone-right {
+            width: 180px;
+        }
+
+        .text-wrapper h2 {
+            order: 2;
+            font-size: 1.8rem;
+        }
+
+        .text-wrapper p {
+            font-size: 0.95rem;
+        }
+
+        .store-btn img {
+            height: 24px;
+        }
+    }
+
+    /*wave bottom*/
+    .wave-bottom {
+      position: relative;
+      z-index: 1;
+      margin-top: -60px;/*adjust overlap*/
+    }
+   .wave-wrapper svg {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+/*svg wave full-width,stretched*/
+.wave-svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;/*ensure full width*/
+    height: 220px;/*visible height of the wave-twerk if needed*/
+  z-index: 2;
+  display: block;
+}
+/* make the svg internal element fill the box when we stretch it */
+.wave-svg svg {
+    width: 100%;
+    height: 100%;
+    display: block;}
+
+    .wave-svg path {
+        fill: #ffa928; /* Adjust the color as needed */
+        fill-opacity: 1;
+    }
+    .wave-svg {
+        position: relative;
+        z-index: 1; /* Ensure it appears above the section background */
+    }
+    /*box wrapper section*/
+    .flex-gap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
