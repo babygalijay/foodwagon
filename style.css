@@ -186,7 +186,7 @@
     }
 
 
-
+/*how it works*/
 
 .how-it-works-section {
 background: linear-gradient(
@@ -257,6 +257,117 @@ background: linear-gradient(
     height: 100px;
   }
 }
+/*featured resturant*/
+  .section-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 28px;
+      margin: 40px 0 20px;
+    }
+
+    .restaurant-card {
+      position: relative;
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .badges {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .badge-custom {
+      background: orange;
+      color: #fff;
+      font-size: 12px;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .badge-custom i {
+      font-size: 11px;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .restaurant-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+   .restaurant-logo {
+  width: 5px;   /* small like your screenshot */
+  height: 5px;
+  border-radius: 4px;  /* slight rounded edges */
+  object-fit: overflow;
+}
+
+
+  .restaurant-info {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* reduced gap to keep it tight */
+  }
+
+  .restaurant-name {
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;  /* slightly smaller to match logo */
+    margin-bottom: 2px;
+  }
+
+  .rating {
+    color: orange;
+    font-size: 12px;
+  }
+
+    .open-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 20px;
+      border: none;
+      color: #fff;
+      background-color: #22c55e; /* green */
+    }
+
+    .view-all-btn {
+      display: block;
+      width: 150px;
+      margin: 30px auto;
+      padding: 12px 20px;
+      background: linear-gradient(to right, #f97316, #facc15);
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+    }
   /* SECTION BACKGROUND */
     .install-app-section {
         background: linear-gradient rgba(228, 185, 185, 0.89), rgba(255, 255, 255, 1);
