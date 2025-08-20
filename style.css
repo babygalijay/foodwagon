@@ -258,116 +258,103 @@ background: linear-gradient(
   }
 }
 /*featured resturant*/
-  .section-title {
-      text-align: center;
-      font-weight: 700;
-      font-size: 28px;
-      margin: 40px 0 20px;
+  body {
+      background: white;
+      color: black;
     }
-
     .restaurant-card {
-      position: relative;
-      background: #fff;
       border-radius: 15px;
       overflow: hidden;
-      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      background: #fff;
+      transition: transform 0.2s;
     }
-
     .restaurant-card:hover {
       transform: translateY(-5px);
     }
-
-    .restaurant-card img {
+    .restaurant-img {
+      position: relative;
       width: 100%;
-      height: 500px;
+      height: 180px;
       object-fit: cover;
     }
-
-    .badges {
+    .badge-group {
       position: absolute;
       top: 10px;
       left: 10px;
       display: flex;
-      gap: 5px;
+      gap: 6px;
     }
-
     .badge-custom {
-      background: orange;
-      color: #fff;
-      font-size: 12px;
-      padding: 5px 8px;
-      border-radius: 5px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.75rem;
       font-weight: 600;
       display: flex;
       align-items: center;
-      gap: 3px;
+      gap: 5px;
     }
-
-    .badge-custom i {
-      font-size: 11px;
+    .badge-discount {
+      background: #ff7043;
+      color: #fff;
     }
-
-    .card-body {
-      padding: 15px;
+    .badge-fast {
+      background: #fbc02d;
+      color: #fff;
     }
-
     .restaurant-info {
       display: flex;
       align-items: center;
       gap: 10px;
+      padding: 10px 15px;
     }
-
-   .restaurant-logo {
-  width: 5px;   /* small like your screenshot */
-  height: 5px;
-  border-radius: 4px;  /* slight rounded edges */
-  object-fit: overflow;
-}
-
-
-  .restaurant-info {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* reduced gap to keep it tight */
-  }
-
-  .restaurant-name {
-    font-weight: 700;
-    color: #000;
-    font-size: 14px;  /* slightly smaller to match logo */
-    margin-bottom: 2px;
-  }
-
-  .rating {
-    color: orange;
-    font-size: 12px;
-  }
-
-    .open-btn {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 6px 14px;
-      font-size: 12px;
-      font-weight: 600;
-      border-radius: 20px;
-      border: none;
-      color: #fff;
-      background-color: #22c55e; /* green */
+    .restaurant-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      border-radius: 6px;
     }
-
-    .view-all-btn {
-      display: block;
-      width: 150px;
-      margin: 30px auto;
-      padding: 12px 20px;
-      background: linear-gradient(to right, #f97316, #facc15);
-      border: none;
-      border-radius: 50px;
-      color: #fff;
-      font-weight: bold;
-      text-align: center;
+    .restaurant-name {
+      font-weight: 700;
+      font-size: 1rem;
+      margin: 0;
+      color: #000;
+    }
+    .rating {
+      color: #fbc02d;
+      font-size: 0.9rem;
+    }
+    .progress-btn {
+      background:rgba(241, 114, 40, 0.2);
+      color:rgba(241, 114, 40, 1);
+      width: 132px;
+      height: 42px;
+      margin-bottom: 8px;
+      left: 16px;
+      right: 16px;
+      top: 8px;
+      radius: 16px;
       cursor: pointer;
     }
+    .view-all {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 30px;
+      border-radius: 15px;
+      margin: 30px auto 0;
+      box-shadow: 0 4px 15px rgba(249,115,22,0.5);
+      text-decoration: none;
+    }
+    /*search by food section*/
+    .search-by-food-section {
+      background-color: rgba(254, 250, 241, 1);
+      width: 1924;
+      height: 571px;
+      opacity: 1;
+    }
+    
   /* SECTION BACKGROUND */
     .install-app-section {
         background: linear-gradient rgba(228, 185, 185, 0.89), rgba(255, 255, 255, 1);
@@ -553,4 +540,19 @@ background: linear-gradient(
       flex-wrap: wrap;
       gap: 20px;
     }
-  
+  /*color customizations*/:root {
+  --bs-green-custom: #79B93C;
+  --bs-green-custom-rgba: rgba(121, 185, 60, 0.2);
+}
+.bg-green-custom {
+  background-color: var(--bs-green-custom) !important;
+}
+.bg-green-custom-light {
+  background-color: var(--bs-green-custom-rgba) !important;
+}
+.text-green-custom {
+  color: var(--bs-green-custom) !important;
+}
+.border-green-custom {
+  border-color: var(--bs-green-custom) !important;
+}
