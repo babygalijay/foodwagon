@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <title>FOOD WAGON-Delivery Services</title>
+      <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  <!-- FontAwesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>FOOD WAGON-Delivery Services</title>
     <script src="https://kit.fontawesome.com/267ebb089c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
    <header>
@@ -295,77 +300,70 @@
   </div>
 </section>
 <!-- Popular Items -->
-<section class="container py-5 Popular-items text-center">
-  <h2 class="fw-bold mb-4">Popular items</h2>
-  <div class="row g-4 mb-4">
+<section class="container py-5 popular-items">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold text-center">Popular Items</h2>
+  </div>
 
+  <!-- Owl Carousel Wrapper -->
+  <div class="owl-carousel" id="popular-carousel">
 
     <!-- Card 1 -->
-    <div class="col-12 col-lg">
-      <div class="card h-100 text-center">
-        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267851/cheesbu_rfijvc.png" class="card-img-top" alt="Cheese Burger">
-        <div class="card-body">
-          <h6 class="fw-bold">Cheese Burger</h6>
-          <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Burger Arena</p>
-          <p>$3.88</p>
-          <button class="btn order-btn w-100">Order Now</button>
-        </div>
+    <div class="card h-100 text-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267851/cheesbu_rfijvc.png" class="card-img-top" alt="Cheese Burger">
+      <div class="card-body">
+        <h6 class="fw-bold">Cheese Burger</h6>
+        <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Burger Arena</p>
+        <p>$3.88</p>
+        <button class="btn order-btn w-100">Order Now</button>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="col-12 col-lg">
-      <div class="card h-100 text-center">
-        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267890/tofe_yadv3j.png" class="card-img-top" alt="Toffe’s Cake">
-        <div class="card-body">
-          <h6 class="fw-bold">Toffe’s Cake</h6>
-          <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Top Sticks</p>
-          <p>$4.00</p>
-          <button class="btn order-btn w-100">Order Now</button>
-        </div>
+    <div class="card h-100 text-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267890/tofe_yadv3j.png" class="card-img-top" alt="Toffe’s Cake">
+      <div class="card-body">
+        <h6 class="fw-bold">Toffe’s Cake</h6>
+        <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Top Sticks</p>
+        <p>$4.00</p>
+        <button class="btn order-btn w-100">Order Now</button>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="col-12 col-lg">
-      <div class="card h-100 text-center">
-        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267889/slide4_caul39.png" class="card-img-top" alt="Dancake">
-        <div class="card-body">
-          <h6 class="fw-bold">Dancake</h6>
-          <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Cake World</p>
-          <p>$1.99</p>
-          <button class="btn order-btn w-100">Order Now</button>
-        </div>
+    <div class="card h-100 text-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267889/slide4_caul39.png" class="card-img-top" alt="Dancake">
+      <div class="card-body">
+        <h6 class="fw-bold">Dancake</h6>
+        <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Cake World</p>
+        <p>$1.99</p>
+        <button class="btn order-btn w-100">Order Now</button>
       </div>
     </div>
 
     <!-- Card 4 -->
-   <div class="col-12 col-lg">
-      <div class="card h-100 text-center">
-        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755710091/bf4aadbf84dfc9c25373676dee733cd313834bab_ratcf5.png" class="card-img-top" alt="Crispy Sandwitch">
-        <div class="card-body">
-          <h6 class="fw-bold">Crispy Sandwitch</h6>
-          <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Fastfood Dine</p>
-          <p>$3.00</p>
-          <button class="btn order-btn w-100">Order Now</button>
-        </div>
+    <div class="card h-100 text-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755710091/bf4aadbf84dfc9c25373676dee733cd313834bab_ratcf5.png" class="card-img-top" alt="Crispy Sandwich">
+      <div class="card-body">
+        <h6 class="fw-bold">Crispy Sandwich</h6>
+        <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Fastfood Dine</p>
+        <p>$3.00</p>
+        <button class="btn order-btn w-100">Order Now</button>
       </div>
     </div>
 
     <!-- Card 5 -->
-   <div class="col-12 col-lg">
-      <div class="card h-100 text-center">
-        <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267889/slide6_gsqggh.png" class="card-img-top" alt="Thai Soup">
-        <div class="card-body">
-          <h6 class="fw-bold">Thai Soup</h6>
-          <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Foody man</p>
-          <p>$2.79</p>
-          <button class="btn order-btn w-100">Order Now</button>
-        </div>
+    <div class="card h-100 text-center">
+      <img src="https://res.cloudinary.com/dkoeutxie/image/upload/v1755267889/slide6_gsqggh.png" class="card-img-top" alt="Thai Soup">
+      <div class="card-body">
+        <h6 class="fw-bold">Thai Soup</h6>
+        <p class="mb-1 text-warning"><i class="fas fa-map-marker-alt"></i> Foody Man</p>
+        <p>$2.79</p>
+        <button class="btn order-btn w-100">Order Now</button>
       </div>
     </div>
 
-  </div>
+  </div> <!-- /owl-carousel -->
 </section>
 
 
@@ -916,9 +914,32 @@
 </footer>
 
   </main>
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
- <script src="https://kit.fontawesome.com/267ebb089c.js" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $("#popular-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        768: { items: 3 },
+        992: { items: 4 }
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
