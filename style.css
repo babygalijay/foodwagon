@@ -324,7 +324,7 @@ background: linear-gradient(
       left: 16px;
       right: 16px;
       top: 8px;
-      radius: 16px;
+      padding: 16px;
       cursor: pointer;
     }
     .view-all {
@@ -367,24 +367,27 @@ background: linear-gradient(
 
     /* PHONE IMAGES */
     .phone-wrapper {
-        position: relative;
+        position: absolute;
         display: flex;
         align-items: center;
-        z-index: 3;
-    }
-
-    .phone {
-        height: auto;
+        z-index: 10;
+        top: 100px;
     }
 
     .phone-left {
         width: 240px;
         margin-right: 60px;/*lower the left phone*/
+        left: 40px;
+        bottom: -30px;
+        z-index: 1;
     }
 
     .phone-right {
         width: 240px;
        margin-left: -50px;/*overlap slightly with the left phone*/
+       left: 100px;
+       z-index: 3;
+       top: 50px;
     }
 
     /* TEXT AREA */
